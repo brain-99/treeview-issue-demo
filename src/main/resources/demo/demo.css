@@ -1,0 +1,3 @@
+*.tree-cell:mystatus HBox > .text {
+    -fx-font-style: italic;
+}

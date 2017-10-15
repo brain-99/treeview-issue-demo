@@ -1,0 +1,26 @@
+plugins {
+    id "com.github.johnrengelman.shadow" version "2.0.1"
+}
+
+apply plugin: 'java'
+
+group 'treeview-issue-demo'
+version '1.0-SNAPSHOT'
+
+sourceCompatibility = 1.8
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    compile('org.controlsfx:controlsfx:8.40.13')
+}
+
+jar {
+    manifest {
+        attributes(
+                'Main-Class': 'demo.Main'
+        )
+    }
+}
